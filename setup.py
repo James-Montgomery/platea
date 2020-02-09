@@ -7,6 +7,13 @@ import setuptools
 from numpy.distutils.core import setup, Extension
 import versioneer
 
+# Note: setup.cfg is set up to only recognise tags starting with v
+
+# git describe --tags # gets the current tag
+# git tag v0.02 # update the tag to something, e.g. v0.02
+# git push origin --tags # push update to branch
+# git pull origin --tags # make sure tags all match now
+
 # python3 -m pip install --user --upgrade setuptools wheel
 # rm -rf build && rm -rf dist && rm -rf *.info
 # python3 setup.py sdist bdist_wheel
@@ -65,7 +72,7 @@ def setup_package():
     """
     Function to manage setup procedures.
     """
-    
+
     setup(
         name="platea",
         version=versioneer.get_version(),
