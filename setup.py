@@ -5,6 +5,7 @@
 import os
 import setuptools
 from numpy.distutils.core import setup, Extension
+import versioneer
 
 # python3 -m pip install --user --upgrade setuptools wheel
 # rm -rf build && rm -rf dist && rm -rf *.info
@@ -59,57 +60,15 @@ ext4 = Extension(name = "platea._fortran.dist",
 extensions = [ext1, ext2, ext3, ext4]
 
 ################################################################################
-# a mess of failed trials ... sigh
-
-# import numpy
-# from numpy.distutils.command.sdist import sdist
-# from numpy.distutils.command.install import install
-
-# class build_ext(numpy.distutils.command.build_ext.build_ext):
-#     def run(self):
-#         self.inplace = True
-#         return numpy.distutils.command.build_ext.build_ext.run(self)
-
-# class install(numpy.distutils.command.install.install):
-#     def run(self):
-#         #self.run_command("build_ext")
-#         build_ext().run()
-#         return numpy.distutils.command.install.install.run(self)
-
-# class build_py(numpy.distutils.command.build_py.build_py):
-#     def run(self):
-#         self.run_command("build_ext")
-#         return super().run()
-
-# https://stackoverflow.com/questions/19569557/pip-not-picking-up-a-custom-install-cmdclass
-# https://stackoverflow.com/questions/41586547/python-3-setup-py-pip-install-that-does-everything-build-ext-install
-# https://stackoverflow.com/questions/29477298/setup-py-run-build-ext-before-anything-else
-
-# class CustomSDistCommand(sdist):
-#     def run(self):
-#         os.system("python setup.py build_ext --inplace")
-#         sdist.run(self)
-#
-# class CustomInstallCommand(install):
-#     def run(self):
-#         os.system("python setup.py build_ext --inplace")
-#         install.run(self)
-
-################################################################################
 
 def setup_package():
     """
     Function to manage setup procedures.
     """
-
-    # ~/opt/anaconda3/envs/python_env/lib/python3.7/site-packages/platea/
-
-    # check package list
-    # python setup.py sdist
-
+    
     setup(
         name="platea",
-        version="0.0.1",
+        version=versioneer.get_version(),
         author="James Montgomery",
         author_email="jamesoneillmontgomery@gmail.com",
         description="A package for statistics and numeric methods.",
@@ -127,8 +86,7 @@ def setup_package():
         install_requires=parse_requirements("requirements.txt"),
         extra_require={},
         ext_modules = extensions,
-        #cmdclass={'install' : CustomInstallCommand, 'sdist': CustomSDistCommand}
-        #cmdclass={'install' : install, 'build_ext' : build_ext, 'build_py': build_py}
+        cmdclass = versioneer.get_cmdclass()
     )
 
 if __name__ == "__main__":

@@ -89,3 +89,7 @@ def _get_precision():
     print(_np.finfo(_np.float32).min)
     print("Min Float 64")
     print(_np.finfo(_np.float64).min)
+
+from ._version import get_versions
+__version__ = get_versions()['version']
+del get_versions
