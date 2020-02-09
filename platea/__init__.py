@@ -32,6 +32,10 @@ spcl_fnc
 
 import numpy as _np
 
+from ._version import get_versions
+__version__ = get_versions()['version']
+del get_versions
+
 try:
     # for local testing
     from . import _fortran
@@ -46,8 +50,6 @@ except:
     import platea.random_number_generators
     import platea.distributions
     import platea.special_functions
-
-# TODO: add versioneer
 
 def _get_precision():
     """
@@ -89,7 +91,3 @@ def _get_precision():
     print(_np.finfo(_np.float32).min)
     print("Min Float 64")
     print(_np.finfo(_np.float64).min)
-
-from ._version import get_versions
-__version__ = get_versions()['version']
-del get_versions

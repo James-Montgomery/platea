@@ -10,10 +10,9 @@ The docstring examples assume that `distributions` has been imported as `dist`::
   >>> from platea import distributions as dist
 """
 
-from numpy import ndarray
-from typing import Union, Tuple
-
 import logging
+from typing import Union, Tuple
+from numpy import ndarray
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -130,7 +129,7 @@ class Normal(object):
             if len(x.shape) == 1:
                 return _dist.normal.pdfv(mu, sigma, x)
             if x.shape[0] == 1:
-                return _dist.normal.pdfv(mu, sigma, x[0, :]).reshape(1,-1)
+                return _dist.normal.pdfv(mu, sigma, x[0, :]).reshape(1, -1)
             return _dist.normal.pdfv2(mu, sigma, x)
         return _dist.normal.pdf(mu, sigma, x)
 
@@ -161,7 +160,7 @@ class Normal(object):
             if len(x.shape) == 1:
                 return _dist.normal.cdfv(mu, sigma, x)
             if x.shape[0] == 1:
-                return _dist.normal.cdfv(mu, sigma, x[0, :]).reshape(1,-1)
+                return _dist.normal.cdfv(mu, sigma, x[0, :]).reshape(1, -1)
             return _dist.normal.cdfv2(mu, sigma, x)
         return _dist.normal.cdf(mu, sigma, x)
 
@@ -192,8 +191,8 @@ class Normal(object):
         if isinstance(p, ndarray):
             if len(p.shape) == 1:
                 return _dist.normal.invcdfv(mu, sigma, p)
-            if x.shape[0] == 1:
-                return _dist.normal.invcdfv(mu, sigma, p[0, :]).reshape(1,-1)
+            if p.shape[0] == 1:
+                return _dist.normal.invcdfv(mu, sigma, p[0, :]).reshape(1, -1)
             return _dist.normal.invcdfv2(mu, sigma, p)
         return _dist.normal.invcdf(mu, sigma, p)
 

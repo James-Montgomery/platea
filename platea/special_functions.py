@@ -9,10 +9,9 @@ The docstring examples assume that `special_functions` has been imported as `sf`
   >>> from platea import special_functions as sf
 """
 
-from numpy import ndarray
-from typing import Union, Tuple
-
 import logging
+from typing import Union
+from numpy import ndarray
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -52,7 +51,7 @@ def gamma(x: Union[float, ndarray]) -> ndarray:
         if len(x.shape) == 1:
             return _spcl_fnc.gamma.gammv(x)
         if x.shape[0] == 1:
-            return _spcl_fnc.gamma.gammv(x[0, :]).reshape(1,-1)
+            return _spcl_fnc.gamma.gammv(x[0, :]).reshape(1, -1)
         return _spcl_fnc.gamma.gammv2(x)
     return _spcl_fnc.gamma.gamm(x)
 
@@ -80,7 +79,7 @@ def gammaln(x: Union[float, ndarray]) -> ndarray:
         if len(x.shape) == 1:
             return _spcl_fnc.gamma.gammlnv(x)
         if x.shape[0] == 1:
-            return _spcl_fnc.gamma.gammlnv(x[0, :]).reshape(1,-1)
+            return _spcl_fnc.gamma.gammlnv(x[0, :]).reshape(1, -1)
         return _spcl_fnc.gamma.gammlnv2(x)
     return _spcl_fnc.gamma.gammln(x)
 
@@ -111,7 +110,7 @@ def gammap(a: Union[float, ndarray], x: Union[float, ndarray]) -> ndarray:
         if len(x.shape) == 1:
             return _spcl_fnc.gamma.gammpv(a, x)
         if x.shape[0] == 1:
-            return _spcl_fnc.gamma.gammpv(a[0, :], x[0, :]).reshape(1,-1)
+            return _spcl_fnc.gamma.gammpv(a[0, :], x[0, :]).reshape(1, -1)
         return _spcl_fnc.gamma.gammpv2(a, x)
     return _spcl_fnc.gamma.gammp(a, x)
 
@@ -142,7 +141,7 @@ def gammaq(a: Union[float, ndarray], x: Union[float, ndarray]) -> ndarray:
         if len(x.shape) == 1:
             return _spcl_fnc.gamma.gammqv(a, x)
         if x.shape[0] == 1:
-            return _spcl_fnc.gamma.gammqv(a[0, :], x[0, :]).reshape(1,-1)
+            return _spcl_fnc.gamma.gammqv(a[0, :], x[0, :]).reshape(1, -1)
         return _spcl_fnc.gamma.gammqv2(a, x)
     return _spcl_fnc.gamma.gammq(a, x)
 
@@ -173,7 +172,7 @@ def erf(x: Union[float, ndarray]) -> ndarray:
         if len(x.shape) == 1:
             return _spcl_fnc.error_function.erfv(x)
         if x.shape[0] == 1:
-            return _spcl_fnc.error_function.erfv(x[0, :]).reshape(1,-1)
+            return _spcl_fnc.error_function.erfv(x[0, :]).reshape(1, -1)
         return _spcl_fnc.error_function.erfv2(x)
     return _spcl_fnc.error_function.erf(x)
 
@@ -201,7 +200,7 @@ def erfc(x: Union[float, ndarray]) -> ndarray:
         if len(x.shape) == 1:
             return _spcl_fnc.error_function.erfcv(x)
         if x.shape[0] == 1:
-            return _spcl_fnc.error_function.erfcv(x[0, :]).reshape(1,-1)
+            return _spcl_fnc.error_function.erfcv(x[0, :]).reshape(1, -1)
         return _spcl_fnc.error_function.erfcv2(x)
     return _spcl_fnc.error_function.erfc(x)
 
@@ -229,7 +228,7 @@ def erfcc(x: Union[float, ndarray]) -> ndarray:
         if len(x.shape) == 1:
             return _spcl_fnc.error_function.erfccv(x)
         if x.shape[0] == 1:
-            return _spcl_fnc.error_function.erfccv(x[0, :]).reshape(1,-1)
+            return _spcl_fnc.error_function.erfccv(x[0, :]).reshape(1, -1)
         return _spcl_fnc.error_function.erfccv2(x)
     return _spcl_fnc.error_function.erfcc(x)
 
@@ -257,7 +256,7 @@ def inverfc(p: Union[float, ndarray]) -> ndarray:
         if len(p.shape) == 1:
             return _spcl_fnc.error_function.inverfcv(p)
         if p.shape[0] == 1:
-            return _spcl_fnc.error_function.inverfcv(p[0, :]).reshape(1,-1)
+            return _spcl_fnc.error_function.inverfcv(p[0, :]).reshape(1, -1)
         return _spcl_fnc.error_function.inverfcv2(p)
     return _spcl_fnc.error_function.inverfc(p)
 
@@ -285,7 +284,7 @@ def inverf(p: Union[float, ndarray]) -> ndarray:
         if len(p.shape) == 1:
             return _spcl_fnc.error_function.inverfv(p)
         if p.shape[0] == 1:
-            return _spcl_fnc.error_function.inverfv(p[0, :]).reshape(1,-1)
+            return _spcl_fnc.error_function.inverfv(p[0, :]).reshape(1, -1)
         return _spcl_fnc.error_function.inverfv2(p)
     return _spcl_fnc.error_function.inverf(p)
 

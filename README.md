@@ -2,7 +2,7 @@
 
 Platea is a passion project of mine. While working to optimize code for my day job as a Data Scientist, I began exploring the wonderful worlds of C++ and Fortran. I became very interested in learning how to implement numerical methods at a low level and in a performant manner. This code is a product of that work.
 
-I'm open to all questions, feedback, commentary, and suggestions as long as they are constructive and polite! Discussions should always come in the form of git issues. 
+I'm open to all questions, feedback, commentary, and suggestions as long as they are constructive and polite! Discussions should always come in the form of git issues.
 
 One of the big design philosophy differences between this package and packages like numpy is that this package is not made to be fool proof. For example, there are functions where we assume that users will read the docs and input appropriate arguments. We have intentionally left out assertions to check if these arguments conform to the docs. This reduces run times, but it also removes a safety net that many python users rely on.
 

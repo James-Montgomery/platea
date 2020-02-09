@@ -18,6 +18,9 @@ import versioneer
 # python3 setup.py sdist bdist_wheel
 # python3 -m twine upload --verbose --repository-url https://upload.pypi.org/legacy/ dist/*
 
+# generate pylintrc file
+# pylint --generate-rcfile > .pylintrc
+
 ################################################################################
 
 def parse_requirements(filename):

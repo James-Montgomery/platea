@@ -10,11 +10,10 @@ The docstring examples assume that `random_number_generators` has been imported 
   >>> from platea import random_number_generators as rng
 """
 
+import logging
+from typing import Union, Tuple
 import numpy as _np
 from numpy import ndarray
-from typing import Union, Tuple
-
-import logging
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
