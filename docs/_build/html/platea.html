@@ -1,0 +1,1073 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>platea package &mdash; platea  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> platea
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">platea package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-platea.distributions">platea.distributions module</a><ul>
+<li><a class="reference internal" href="#distributions">Distributions</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-platea.random_number_generators">platea.random_number_generators module</a><ul>
+<li><a class="reference internal" href="#random-number-generators">Random Number Generators</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-platea.special_functions">platea.special_functions module</a><ul>
+<li><a class="reference internal" href="#special-functions">Special Functions</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-platea.utilities">platea.utilities module</a><ul>
+<li><a class="reference internal" href="#utilities">Utilities</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-platea">Module contents</a><ul>
+<li><a class="reference internal" href="#platea">Platea</a><ul>
+<li><a class="reference internal" href="#how-to-use-the-documentation">How to use the documentation</a></li>
+<li><a class="reference internal" href="#available-subpackages">Available subpackages</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">platea</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>platea package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/platea.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="platea-package">
+<h1>platea package<a class="headerlink" href="#platea-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-platea.distributions">
+<span id="platea-distributions-module"></span><h2>platea.distributions module<a class="headerlink" href="#module-platea.distributions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="distributions">
+<h3>Distributions<a class="headerlink" href="#distributions" title="Permalink to this headline">¶</a></h3>
+<p>This mode includes functions and classes for working with probability
+distributions.</p>
+<p class="rubric">Notes</p>
+<dl>
+<dt>The docstring examples assume that <cite>distributions</cite> has been imported as <cite>dist</cite>::</dt><dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">platea</span> <span class="kn">import</span> <span class="n">distributions</span> <span class="k">as</span> <span class="n">dist</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+<dl class="class">
+<dt id="platea.distributions.Normal">
+<em class="property">class </em><code class="sig-prename descclassname">platea.distributions.</code><code class="sig-name descname">Normal</code><span class="sig-paren">(</span><em class="sig-param">mu: float = None</em>, <em class="sig-param">sigma: float = None</em><span class="sig-paren">)</span><a class="headerlink" href="#platea.distributions.Normal" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Normal (Gaussian) distribution.</p>
+<p class="rubric">Notes</p>
+<p>Numerical Recipes 3Ed 6.14.1</p>
+<dl class="attribute">
+<dt>
+<code class="sig-name descname">mu float</code></dt>
+<dd><p>The mean of the Gaussian distribution.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="sig-name descname">sigma float</code></dt>
+<dd><p>The standard deviation of the Gaussian distribution.
+(square root of the variance)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="sig-name descname">state_size int</code></dt>
+<dd><p>The length of the state array of the rng used in the draw method</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="platea.distributions.Normal.pdf">
+<code class="sig-name descname">pdf</code><span class="sig-paren">(</span><em class="sig-param">x</em>, <em class="sig-param">mu</em>, <em class="sig-param">sigma</em><span class="sig-paren">)</span><a class="headerlink" href="#platea.distributions.Normal.pdf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Evaluate the pdf of the distribution at x.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="platea.distributions.Normal.cdf">
+<code class="sig-name descname">cdf</code><span class="sig-paren">(</span><em class="sig-param">x</em>, <em class="sig-param">mu</em>, <em class="sig-param">sigma</em><span class="sig-paren">)</span><a class="headerlink" href="#platea.distributions.Normal.cdf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Evaluate the cdf of the distribution at x.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="platea.distributions.Normal.invdcdf">
+<code class="sig-name descname">invdcdf</code><span class="sig-paren">(</span><em class="sig-param">p</em>, <em class="sig-param">mu</em>, <em class="sig-param">sigma</em><span class="sig-paren">)</span><a class="headerlink" href="#platea.distributions.Normal.invdcdf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Evaluate the invcdf of the distribution at p.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="platea.distributions.Normal.draw">
+<code class="sig-name descname">draw</code><span class="sig-paren">(</span><em class="sig-param">n</em>, <em class="sig-param">mu</em>, <em class="sig-param">sigma</em><span class="sig-paren">)</span><a class="headerlink" href="#platea.distributions.Normal.draw" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sample random number(s).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="platea.distributions.Normal.set_state">
+<code class="sig-name descname">set_state</code><span class="sig-paren">(</span><em class="sig-param">seed</em><span class="sig-paren">)</span><a class="headerlink" href="#platea.distributions.Normal.set_state" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the internal state of the rng.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="platea.distributions.Normal.get_state">
+<code class="sig-name descname">get_state</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#platea.distributions.Normal.get_state" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the current internal state of the rng.</p>
+</dd></dl>
+
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">norm</span> <span class="o">=</span> <span class="n">dist</span><span class="o">.</span><span class="n">Normal</span><span class="p">(</span><span class="n">mu</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">sigma</span><span class="o">=</span><span class="mf">1.0</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pdf_value</span> <span class="o">=</span> <span class="n">norm</span><span class="o">.</span><span class="n">pdf</span><span class="p">(</span><span class="mf">0.57</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sample</span> <span class="o">=</span> <span class="n">norm</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="method">
+<dt>
+<code class="sig-name descname">cdf</code><span class="sig-paren">(</span><em class="sig-param">x: Union[float, numpy.ndarray], mu: float = None, sigma: float = None</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray</dt>
+<dd><p>Cummulative density function.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<em>float</em><em>, </em><em>ndarray</em><em>[</em><em>float</em><em>]</em><em>, </em><em>ndarray</em><em>[</em><em>float</em><em>, </em><em>float</em><em>]</em><em>]</em>) – Real valued argument to the function. Can be a single value or
+an array. Can be one or two dimensional.</p></li>
+<li><p><strong>mu</strong> (<em>float</em>) – The mean of the Gaussian distribution. If <cite>None</cite> then uses the class
+attribute value.</p></li>
+<li><p><strong>sigma</strong> (<em>float</em>) – The standard deviation of the Gaussian distribution. (square root of
+the variance). If <cite>None</cite> then uses the class attribute value.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>function value</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt>
+<code class="sig-name descname">draw</code><span class="sig-paren">(</span><em class="sig-param">n: int = 1</em>, <em class="sig-param">mu: float = None</em>, <em class="sig-param">sigma: float = None</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray</dt>
+<dd><p>Draw random numbers valued [0.0, 1.0].</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>n</strong> (<em>int</em><em>, </em><em>tuple</em><em>(</em><em>int</em><em>, </em><em>int</em><em>)</em>) – The number of samples to draw. Can be one or two dimensional.</p></li>
+<li><p><strong>mu</strong> (<em>float</em>) – The mean of the Gaussian distribution. If <cite>None</cite> then uses the class
+attribute value.</p></li>
+<li><p><strong>sigma</strong> (<em>float</em>) – The standard deviation of the Gaussian distribution. (square root of
+the variance). If <cite>None</cite> then uses the class attribute value.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>samples from the distribution</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>ndarray[float]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt>
+<code class="sig-name descname">get_state</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; numpy.ndarray</dt>
+<dd><p>Get the internal state of the rng.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>None</strong> – </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the current internal state of the RNG</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>ndarray[int]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="platea.distributions.Normal.invcdf">
+<code class="sig-name descname">invcdf</code><span class="sig-paren">(</span><em class="sig-param">p: Union[float, numpy.ndarray], mu: float = None, sigma: float = None</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray<a class="headerlink" href="#platea.distributions.Normal.invcdf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Inverse cummulative density function.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>p</strong> (<em>float</em><em>, </em><em>ndarray</em><em>[</em><em>float</em><em>]</em><em>, </em><em>ndarray</em><em>[</em><em>float</em><em>, </em><em>float</em><em>]</em><em>]</em>) – Real valued argument to the function. Can be a single value or
+an array. Can be one or two dimensional. Should be a probability
+[0.0, 1.0]</p></li>
+<li><p><strong>mu</strong> (<em>float</em>) – The mean of the Gaussian distribution. If <cite>None</cite> then uses the class
+attribute value.</p></li>
+<li><p><strong>sigma</strong> (<em>float</em>) – The standard deviation of the Gaussian distribution. (square root of
+the variance). If <cite>None</cite> then uses the class attribute value.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>function value</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt>
+<code class="sig-name descname">pdf</code><span class="sig-paren">(</span><em class="sig-param">x: Union[float, numpy.ndarray], mu: float = None, sigma: float = None</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray</dt>
+<dd><p>Probability density function.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<em>float</em><em>, </em><em>ndarray</em><em>[</em><em>float</em><em>]</em><em>, </em><em>ndarray</em><em>[</em><em>float</em><em>, </em><em>float</em><em>]</em><em>]</em>) – Real valued argument to the function. Can be a single value or
+an array. Can be one or two dimensional.</p></li>
+<li><p><strong>mu</strong> (<em>float</em>) – The mean of the Gaussian distribution. If <cite>None</cite> then uses the class
+attribute value.</p></li>
+<li><p><strong>sigma</strong> (<em>float</em>) – The standard deviation of the Gaussian distribution. (square root of
+the variance). If <cite>None</cite> then uses the class attribute value.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>function value</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt>
+<code class="sig-name descname">set_state</code><span class="sig-paren">(</span><em class="sig-param">seed: Union[int, numpy.ndarray]</em><span class="sig-paren">)</span> &#x2192; None</dt>
+<dd><p>Set the state of the rng.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>seed</strong> (<em>int</em><em>, </em><em>ndarray</em><em>[</em><em>int</em><em>]</em>) – The seed for the rng. See the docs for the platea default rng:
+help(pla.random_number_generators.ran)</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#platea.utilities.Timer.None" title="platea.utilities.Timer.None">None</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="module-platea.random_number_generators">
+<span id="platea-random-number-generators-module"></span><h2>platea.random_number_generators module<a class="headerlink" href="#module-platea.random_number_generators" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="random-number-generators">
+<h3>Random Number Generators<a class="headerlink" href="#random-number-generators" title="Permalink to this headline">¶</a></h3>
+<p>This module contains random number generators (RNGs). These RNGs are operating
+system (OS) agnostic.</p>
+<p class="rubric">Notes</p>
+<dl>
+<dt>The docstring examples assume that <cite>random_number_generators</cite> has been imported as <cite>rng</cite>::</dt><dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">platea</span> <span class="kn">import</span> <span class="n">random_number_generators</span> <span class="k">as</span> <span class="n">rng</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+<dl class="attribute">
+<dt id="platea.random_number_generators.Ran">
+<code class="sig-prename descclassname">platea.random_number_generators.</code><code class="sig-name descname">Ran</code><a class="headerlink" href="#platea.random_number_generators.Ran" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#platea.random_number_generators.Ran2" title="platea.random_number_generators.Ran2"><code class="xref py py-class docutils literal notranslate"><span class="pre">platea.random_number_generators.Ran2</span></code></a></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="platea.random_number_generators.Ran0">
+<em class="property">class </em><code class="sig-prename descclassname">platea.random_number_generators.</code><code class="sig-name descname">Ran0</code><span class="sig-paren">(</span><em class="sig-param">seed: Union[int</em>, <em class="sig-param">numpy.ndarray] = -99999999999</em><span class="sig-paren">)</span><a class="headerlink" href="#platea.random_number_generators.Ran0" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Random number generator (RNG).</p>
+<p class="rubric">Notes</p>
+<p>Numerical Recipes in Fortran77 Ch7.1 &lt;ran0&gt;
+Numerical Recipes in C 2Ed Ch7.1 &lt;ran0&gt;</p>
+<dl class="attribute">
+<dt>
+<code class="sig-name descname">state_size int</code></dt>
+<dd><p>The length of the state array of the rng</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="platea.random_number_generators.Ran0.set_state">
+<code class="sig-name descname">set_state</code><span class="sig-paren">(</span><em class="sig-param">seed</em><span class="sig-paren">)</span><a class="headerlink" href="#platea.random_number_generators.Ran0.set_state" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the internal state of the rng.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="platea.random_number_generators.Ran0.get_state">
+<code class="sig-name descname">get_state</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#platea.random_number_generators.Ran0.get_state" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the current internal state of the rng.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="platea.random_number_generators.Ran0.draw">
+<code class="sig-name descname">draw</code><span class="sig-paren">(</span><em class="sig-param">n</em><span class="sig-paren">)</span><a class="headerlink" href="#platea.random_number_generators.Ran0.draw" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sample random number(s).</p>
+</dd></dl>
+
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">random_number_generator</span> <span class="o">=</span> <span class="n">rng</span><span class="o">.</span><span class="n">Ran0</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">state</span> <span class="o">=</span> <span class="n">random_number_generator</span><span class="o">.</span><span class="n">get_state</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">random_number_generator</span><span class="o">.</span><span class="n">set_state</span><span class="p">(</span><span class="n">seed</span><span class="o">=</span><span class="n">state</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">random_number</span> <span class="o">=</span> <span class="n">random_number_generator</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="method">
+<dt>
+<code class="sig-name descname">draw</code><span class="sig-paren">(</span><em class="sig-param">n: Union[int</em>, <em class="sig-param">Tuple[int</em>, <em class="sig-param">int]] = 1</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray</dt>
+<dd><p>Draw random numbers valued [0.0, 1.0].</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>n</strong> (<em>int</em><em>, </em><em>tuple</em><em>(</em><em>int</em><em>, </em><em>int</em><em>)</em>) – The number of samples to draw. Can be one or two dimensional.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>samples from a uniform distribution [0.0, 1.0]</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>ndarray[float]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt>
+<code class="sig-name descname">get_state</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; numpy.ndarray</dt>
+<dd><p>Get the internal state of the rng.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>None</strong> – </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the current internal state of the RNG</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>ndarray[int]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt>
+<code class="sig-name descname">set_state</code><span class="sig-paren">(</span><em class="sig-param">seed: Union[int, numpy.ndarray]</em><span class="sig-paren">)</span> &#x2192; None</dt>
+<dd><p>Set the state of the rng.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>seed</strong> (<em>int</em><em>, </em><em>ndarray</em><em>[</em><em>int</em><em>]</em>) – If an integer valued [-99999999999, 0], the RNG will be rest using
+that seed. Any other value will set the state of the RNG. For
+example, you could set the state of RNG one to the state of RNG two
+rather than resetting RNG one with a new seed.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#platea.utilities.Timer.None" title="platea.utilities.Timer.None">None</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="platea.random_number_generators.Ran1">
+<em class="property">class </em><code class="sig-prename descclassname">platea.random_number_generators.</code><code class="sig-name descname">Ran1</code><span class="sig-paren">(</span><em class="sig-param">seed: Union[int</em>, <em class="sig-param">numpy.ndarray] = -99999999999</em><span class="sig-paren">)</span><a class="headerlink" href="#platea.random_number_generators.Ran1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Random number generator (RNG).</p>
+<p class="rubric">Notes</p>
+<p>Numerical Recipes in Fortran77 Ch7.1 &lt;ran1&gt;
+Numerical Recipes in C 2Ed Ch7.1 &lt;ran1&gt;</p>
+<dl class="attribute">
+<dt>
+<code class="sig-name descname">state_size int</code></dt>
+<dd><p>The length of the state array of the rng</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="platea.random_number_generators.Ran1.set_state">
+<code class="sig-name descname">set_state</code><span class="sig-paren">(</span><em class="sig-param">seed</em><span class="sig-paren">)</span><a class="headerlink" href="#platea.random_number_generators.Ran1.set_state" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the internal state of the rng.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="platea.random_number_generators.Ran1.get_state">
+<code class="sig-name descname">get_state</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#platea.random_number_generators.Ran1.get_state" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the current internal state of the rng.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="platea.random_number_generators.Ran1.draw">
+<code class="sig-name descname">draw</code><span class="sig-paren">(</span><em class="sig-param">n</em><span class="sig-paren">)</span><a class="headerlink" href="#platea.random_number_generators.Ran1.draw" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sample random number(s).</p>
+</dd></dl>
+
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">random_number_generator</span> <span class="o">=</span> <span class="n">rng</span><span class="o">.</span><span class="n">Ran1</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">state</span> <span class="o">=</span> <span class="n">random_number_generator</span><span class="o">.</span><span class="n">get_state</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">random_number_generator</span><span class="o">.</span><span class="n">set_state</span><span class="p">(</span><span class="n">seed</span><span class="o">=</span><span class="n">state</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">random_number</span> <span class="o">=</span> <span class="n">random_number_generator</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="method">
+<dt>
+<code class="sig-name descname">draw</code><span class="sig-paren">(</span><em class="sig-param">n: Union[int</em>, <em class="sig-param">Tuple[int</em>, <em class="sig-param">int]] = 1</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray</dt>
+<dd><p>Draw random numbers valued [0.0, 1.0].</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>n</strong> (<em>int</em><em>, </em><em>tuple</em><em>(</em><em>int</em><em>, </em><em>int</em><em>)</em>) – The number of samples to draw. Can be one or two dimensional.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>samples from a uniform distribution [0.0, 1.0]</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>ndarray[float]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt>
+<code class="sig-name descname">get_state</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; numpy.ndarray</dt>
+<dd><p>Get the internal state of the rng.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>None</strong> – </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the current internal state of the RNG</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>ndarray[int]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt>
+<code class="sig-name descname">set_state</code><span class="sig-paren">(</span><em class="sig-param">seed: Union[int, numpy.ndarray]</em><span class="sig-paren">)</span> &#x2192; None</dt>
+<dd><p>Set the state of the rng.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>seed</strong> (<em>int</em><em>, </em><em>ndarray</em><em>[</em><em>int</em><em>]</em>) – If an integer valued [-99999999999, 0], the RNG will be rest using
+that seed. Any other value will set the state of the RNG. For
+example, you could set the state of RNG one to the state of RNG two
+rather than resetting RNG one with a new seed.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#platea.utilities.Timer.None" title="platea.utilities.Timer.None">None</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="platea.random_number_generators.Ran2">
+<em class="property">class </em><code class="sig-prename descclassname">platea.random_number_generators.</code><code class="sig-name descname">Ran2</code><span class="sig-paren">(</span><em class="sig-param">seed: Union[int</em>, <em class="sig-param">numpy.ndarray] = -99999999999</em><span class="sig-paren">)</span><a class="headerlink" href="#platea.random_number_generators.Ran2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Random number generator (RNG).</p>
+<p class="rubric">Notes</p>
+<p>Numerical Recipes in Fortran77 Ch7.1 &lt;ran2&gt;
+Numerical Recipes in C 2Ed Ch7.1 &lt;ran2&gt;</p>
+<dl class="attribute">
+<dt>
+<code class="sig-name descname">state_size int</code></dt>
+<dd><p>The length of the state array of the rng</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="platea.random_number_generators.Ran2.set_state">
+<code class="sig-name descname">set_state</code><span class="sig-paren">(</span><em class="sig-param">seed</em><span class="sig-paren">)</span><a class="headerlink" href="#platea.random_number_generators.Ran2.set_state" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the internal state of the rng.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="platea.random_number_generators.Ran2.get_state">
+<code class="sig-name descname">get_state</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#platea.random_number_generators.Ran2.get_state" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the current internal state of the rng.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="platea.random_number_generators.Ran2.draw">
+<code class="sig-name descname">draw</code><span class="sig-paren">(</span><em class="sig-param">n</em><span class="sig-paren">)</span><a class="headerlink" href="#platea.random_number_generators.Ran2.draw" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sample random number(s).</p>
+</dd></dl>
+
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">random_number_generator</span> <span class="o">=</span> <span class="n">rng</span><span class="o">.</span><span class="n">Ran2</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">state</span> <span class="o">=</span> <span class="n">random_number_generator</span><span class="o">.</span><span class="n">get_state</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">random_number_generator</span><span class="o">.</span><span class="n">set_state</span><span class="p">(</span><span class="n">seed</span><span class="o">=</span><span class="n">state</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">random_number</span> <span class="o">=</span> <span class="n">random_number_generator</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="method">
+<dt>
+<code class="sig-name descname">draw</code><span class="sig-paren">(</span><em class="sig-param">n: Union[int</em>, <em class="sig-param">Tuple[int</em>, <em class="sig-param">int]] = 1</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray</dt>
+<dd><p>Draw random numbers valued [0.0, 1.0].</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>n</strong> (<em>int</em><em>, </em><em>tuple</em><em>(</em><em>int</em><em>, </em><em>int</em><em>)</em>) – The number of samples to draw. Can be one or two dimensional.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>samples from a uniform distribution [0.0, 1.0]</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>ndarray[float]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt>
+<code class="sig-name descname">get_state</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; numpy.ndarray</dt>
+<dd><p>Get the internal state of the rng.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>None</strong> – </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the current internal state of the RNG</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>ndarray[int]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt>
+<code class="sig-name descname">set_state</code><span class="sig-paren">(</span><em class="sig-param">seed: Union[int, numpy.ndarray]</em><span class="sig-paren">)</span> &#x2192; None</dt>
+<dd><p>Set the state of the rng.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>seed</strong> (<em>int</em><em>, </em><em>ndarray</em><em>[</em><em>int</em><em>]</em>) – If an integer valued [-99999999999, 0], the RNG will be rest using
+that seed. Any other value will set the state of the RNG. For
+example, you could set the state of RNG one to the state of RNG two
+rather than resetting RNG one with a new seed.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#platea.utilities.Timer.None" title="platea.utilities.Timer.None">None</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="module-platea.special_functions">
+<span id="platea-special-functions-module"></span><h2>platea.special_functions module<a class="headerlink" href="#module-platea.special_functions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="special-functions">
+<h3>Special Functions<a class="headerlink" href="#special-functions" title="Permalink to this headline">¶</a></h3>
+<p>Special functions commonly used in numerical calculations.</p>
+<p class="rubric">Notes</p>
+<dl>
+<dt>The docstring examples assume that <cite>special_functions</cite> has been imported as <cite>sf</cite>::</dt><dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">platea</span> <span class="kn">import</span> <span class="n">special_functions</span> <span class="k">as</span> <span class="n">sf</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+<dl class="function">
+<dt id="platea.special_functions.erf">
+<code class="sig-prename descclassname">platea.special_functions.</code><code class="sig-name descname">erf</code><span class="sig-paren">(</span><em class="sig-param">x: Union[float, numpy.ndarray]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray<a class="headerlink" href="#platea.special_functions.erf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Error function.</p>
+<p class="rubric">Notes</p>
+<p>NIST: <a class="reference external" href="https://dlmf.nist.gov/7.2#i">https://dlmf.nist.gov/7.2#i</a>
+Numerical Recipes in C 2Ed 6.2</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>x</strong> (<em>float</em><em>, </em><em>ndarray</em><em>[</em><em>float</em><em>]</em><em>, </em><em>ndarray</em><em>[</em><em>float</em><em>, </em><em>float</em><em>]</em>) – Real valued input. Can be a single value or an array. Can be one or two
+dimensional.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>function value</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="platea.special_functions.erfc">
+<code class="sig-prename descclassname">platea.special_functions.</code><code class="sig-name descname">erfc</code><span class="sig-paren">(</span><em class="sig-param">x: Union[float, numpy.ndarray]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray<a class="headerlink" href="#platea.special_functions.erfc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Complementary error function.</p>
+<p class="rubric">Notes</p>
+<p>NIST: <a class="reference external" href="https://dlmf.nist.gov/7.2#i">https://dlmf.nist.gov/7.2#i</a>
+Numerical Recipes in C 2Ed 6.2</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>x</strong> (<em>float</em><em>, </em><em>ndarray</em><em>[</em><em>float</em><em>]</em><em>, </em><em>ndarray</em><em>[</em><em>float</em><em>, </em><em>float</em><em>]</em>) – Real valued input. Can be a single value or an array. Can be one or two
+dimensional.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>function value</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="platea.special_functions.erfcc">
+<code class="sig-prename descclassname">platea.special_functions.</code><code class="sig-name descname">erfcc</code><span class="sig-paren">(</span><em class="sig-param">x: Union[float, numpy.ndarray]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray<a class="headerlink" href="#platea.special_functions.erfcc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Chebyshev approximation of complementary error function.</p>
+<p class="rubric">Notes</p>
+<p>NIST: <a class="reference external" href="https://dlmf.nist.gov/7.2#i">https://dlmf.nist.gov/7.2#i</a>
+Numerical Recipes in C 2Ed 6.2</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>x</strong> (<em>float</em><em>, </em><em>ndarray</em><em>[</em><em>float</em><em>]</em><em>, </em><em>ndarray</em><em>[</em><em>float</em><em>, </em><em>float</em><em>]</em>) – Real valued input. Can be a single value or an array. Can be one or two
+dimensional.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>function value</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="platea.special_functions.gamma">
+<code class="sig-prename descclassname">platea.special_functions.</code><code class="sig-name descname">gamma</code><span class="sig-paren">(</span><em class="sig-param">x: Union[float, numpy.ndarray]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray<a class="headerlink" href="#platea.special_functions.gamma" title="Permalink to this definition">¶</a></dt>
+<dd><p>The gamma function.</p>
+<p class="rubric">Notes</p>
+<p>NIST: <a class="reference external" href="https://dlmf.nist.gov/5.2#E1">https://dlmf.nist.gov/5.2#E1</a>
+Numerical Recipes 3Ed 6.1</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>x</strong> (<em>float</em><em>, </em><em>ndarray</em><em>[</em><em>float</em><em>]</em><em>, </em><em>ndarray</em><em>[</em><em>float</em><em>, </em><em>float</em><em>]</em>) – Real valued argument to the gamma function. Can be a single value or an
+array. Can be one or two dimensional.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>gamma function value</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="platea.special_functions.gammaln">
+<code class="sig-prename descclassname">platea.special_functions.</code><code class="sig-name descname">gammaln</code><span class="sig-paren">(</span><em class="sig-param">x: Union[float, numpy.ndarray]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray<a class="headerlink" href="#platea.special_functions.gammaln" title="Permalink to this definition">¶</a></dt>
+<dd><p>Log of the absolute value of the gamma function.</p>
+<p class="rubric">Notes</p>
+<p>NIST: <a class="reference external" href="https://dlmf.nist.gov/5">https://dlmf.nist.gov/5</a>
+Numerical Recipes 3Ed 6.1</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>x</strong> (<em>float</em><em>, </em><em>ndarray</em><em>[</em><em>float</em><em>]</em><em>, </em><em>ndarray</em><em>[</em><em>float</em><em>, </em><em>float</em><em>]</em>) – Real valued argument to the gamma function. Can be a single value or an
+array. Can be one or two dimensional.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>natural log of the gamma function value</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="platea.special_functions.gammap">
+<code class="sig-prename descclassname">platea.special_functions.</code><code class="sig-name descname">gammap</code><span class="sig-paren">(</span><em class="sig-param">a: Union[float, numpy.ndarray], x: Union[float, numpy.ndarray]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray<a class="headerlink" href="#platea.special_functions.gammap" title="Permalink to this definition">¶</a></dt>
+<dd><p>Lower incomplete gamma function. CDF of the gamma distribution.</p>
+<p class="rubric">Notes</p>
+<p>NIST: <a class="reference external" href="https://dlmf.nist.gov/8.2#E4">https://dlmf.nist.gov/8.2#E4</a>
+Numerical Recipes 3Ed 6.2</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a</strong> (<em>float</em><em>, </em><em>ndarray</em><em>[</em><em>float</em><em>]</em><em>, </em><em>ndarray</em><em>[</em><em>float</em><em>, </em><em>float</em><em>]</em>) – Parametertizes the gamma distribution. Must be &gt; 0.0 Can be a single
+value or an array. Can be one or two dimensional.</p></li>
+<li><p><strong>x</strong> (<em>float</em><em>, </em><em>ndarray</em><em>[</em><em>float</em><em>]</em><em>, </em><em>ndarray</em><em>[</em><em>float</em><em>, </em><em>float</em><em>]</em>) – Probability expressed as a value 0.0 to 1.0. Must be &gt;= 0.0 Can be a
+single value or an array. Can be one or two dimensional.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>function value</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="platea.special_functions.gammaq">
+<code class="sig-prename descclassname">platea.special_functions.</code><code class="sig-name descname">gammaq</code><span class="sig-paren">(</span><em class="sig-param">a: Union[float, numpy.ndarray], x: Union[float, numpy.ndarray]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray<a class="headerlink" href="#platea.special_functions.gammaq" title="Permalink to this definition">¶</a></dt>
+<dd><p>Upper incomplete gamma function. Survival function of the gamma distribution.</p>
+<p class="rubric">Notes</p>
+<p>NIST: <a class="reference external" href="https://dlmf.nist.gov/8.2#E4">https://dlmf.nist.gov/8.2#E4</a>
+Numerical Recipes 3Ed 6.2</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a</strong> (<em>float</em><em>, </em><em>ndarray</em><em>[</em><em>float</em><em>]</em><em>, </em><em>ndarray</em><em>[</em><em>float</em><em>, </em><em>float</em><em>]</em>) – Parametertizes the gamma distribution. Must be &gt; 0.0 Can be a single
+value or an array. Can be one or two dimensional.</p></li>
+<li><p><strong>x</strong> (<em>float</em><em>, </em><em>ndarray</em><em>[</em><em>float</em><em>]</em><em>, </em><em>ndarray</em><em>[</em><em>float</em><em>, </em><em>float</em><em>]</em>) – Non-negative argument. Must be &gt;= 0.0 Can be a single value or an array.
+Can be one or two dimensional.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>function value</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="platea.special_functions.inverf">
+<code class="sig-prename descclassname">platea.special_functions.</code><code class="sig-name descname">inverf</code><span class="sig-paren">(</span><em class="sig-param">p: Union[float, numpy.ndarray]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray<a class="headerlink" href="#platea.special_functions.inverf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Inverse of the error function.</p>
+<p class="rubric">Notes</p>
+<p>NIST: <a class="reference external" href="https://dlmf.nist.gov/7.17">https://dlmf.nist.gov/7.17</a>
+Numerical Recipes 3Ed 6.2</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>p</strong> (<em>float</em><em>, </em><em>ndarray</em><em>[</em><em>float</em><em>]</em><em>, </em><em>ndarray</em><em>[</em><em>float</em><em>, </em><em>float</em><em>]</em>) – Real valued input. A probability [0.0, 1.0]. Can be a single value or an
+array. Can be one or two dimensional.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>function value</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="platea.special_functions.inverfc">
+<code class="sig-prename descclassname">platea.special_functions.</code><code class="sig-name descname">inverfc</code><span class="sig-paren">(</span><em class="sig-param">p: Union[float, numpy.ndarray]</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray<a class="headerlink" href="#platea.special_functions.inverfc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Inverse of the complementary error function.</p>
+<p class="rubric">Notes</p>
+<p>NIST: <a class="reference external" href="https://dlmf.nist.gov/7.17">https://dlmf.nist.gov/7.17</a>
+Numerical Recipes 3Ed 6.2</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>p</strong> (<em>float</em><em>, </em><em>ndarray</em><em>[</em><em>float</em><em>]</em><em>, </em><em>ndarray</em><em>[</em><em>float</em><em>, </em><em>float</em><em>]</em>) – Real valued input. A probability [0.0, 1.0]. Can be a single value or an
+array. Can be one or two dimensional.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>function value</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="module-platea.utilities">
+<span id="platea-utilities-module"></span><h2>platea.utilities module<a class="headerlink" href="#module-platea.utilities" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="utilities">
+<h3>Utilities<a class="headerlink" href="#utilities" title="Permalink to this headline">¶</a></h3>
+<p>Assorted utilities for the Platea package.</p>
+<dl class="class">
+<dt id="platea.utilities.Timer">
+<em class="property">class </em><code class="sig-prename descclassname">platea.utilities.</code><code class="sig-name descname">Timer</code><a class="headerlink" href="#platea.utilities.Timer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Timer.</p>
+<p>A convenient class for timing things.</p>
+<dl class="attribute">
+<dt id="platea.utilities.Timer.None">
+<code class="sig-name descname">None</code><a class="headerlink" href="#platea.utilities.Timer.None" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt>
+<code class="sig-name descname">None</code><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
+<dd></dd></dl>
+
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">pla</span><span class="o">.</span><span class="n">utilities</span><span class="o">.</span><span class="n">Timer</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">do</span> <span class="n">someting</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="platea.utilities.deprecated">
+<code class="sig-prename descclassname">platea.utilities.</code><code class="sig-name descname">deprecated</code><span class="sig-paren">(</span><em class="sig-param">func</em><span class="sig-paren">)</span><a class="headerlink" href="#platea.utilities.deprecated" title="Permalink to this definition">¶</a></dt>
+<dd><p>A decorator used to mark functions that are deprecated with a warning.</p>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nd">@deprecated</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">foo</span><span class="p">():</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">do</span> <span class="n">something</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="module-platea">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-platea" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="platea">
+<h3>Platea<a class="headerlink" href="#platea" title="Permalink to this headline">¶</a></h3>
+<p>A package for simple numerical methods.</p>
+<div class="section" id="how-to-use-the-documentation">
+<h4>How to use the documentation<a class="headerlink" href="#how-to-use-the-documentation" title="Permalink to this headline">¶</a></h4>
+<dl>
+<dt>The docstring examples assume that <cite>platea</cite> has been imported as <cite>pla</cite>::</dt><dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">platea</span> <span class="k">as</span> <span class="nn">pla</span>
+</pre></div>
+</div>
+</dd>
+<dt>Code snippets are indicated by three greater-than signs::</dt><dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="mi">42</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+</pre></div>
+</div>
+</dd>
+<dt>Use the built-in <code class="docutils literal notranslate"><span class="pre">help</span></code> function to view a function’s docstring::</dt><dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">help</span><span class="p">(</span><span class="n">pla</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl>
+<dt>or <code class="docutils literal notranslate"><span class="pre">dir</span></code>::</dt><dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">dir</span><span class="p">(</span><span class="n">pla</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd>
+<dt>You can check the annotations of a function to see type hints::</dt><dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pla</span><span class="o">.</span><span class="n">spcl_fnc</span><span class="o">.</span><span class="n">gamma</span><span class="o">.</span><span class="vm">__annotations__</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+<p>By conventions, look to modeule docstrings for source references and definitions
+of important terms / acronyms.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">help</span><span class="p">(</span><span class="n">pla</span><span class="o">.</span><span class="n">rng</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="available-subpackages">
+<h4>Available subpackages<a class="headerlink" href="#available-subpackages" title="Permalink to this headline">¶</a></h4>
+<dl class="simple">
+<dt>rng</dt><dd><p>random number generators</p>
+</dd>
+<dt>dist</dt><dd><p>tools for working with statistical distribution</p>
+</dd>
+<dt>spcl_fnc</dt><dd><p>special mathematical functions like the <cite>error function</cite></p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, James Montgomery
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,18 +1,4 @@
 ################################################################################
-# Misc
-
-*.ipynb
-.sources
-trash*
-.DS_Store
-
-################################################################################
-# Data Files
-
-!docs/_build
-!docs/_build/*
-
-################################################################################
 # Data Files
 
 *.jpg
@@ -30,6 +16,7 @@ trash*
 *.xml
 *.xls
 *.dat
+*.rst
 
 *.pps
 *.ppsx
@@ -202,3 +189,30 @@ dmypy.json
 *.exe
 *.out
 *.app
+
+################################################################################
+# Docs
+
+!docs
+!docs/*
+
+!docs/_templates
+!docs/_templates/*
+
+!docs/_build
+!docs/_build/*
+!docs/_build/doctrees
+!docs/_build/html/*
+!docs/_build/html/_sources/*
+!docs/_build/html/_static/*
+
+!docs/_static
+!docs/_static/*
+
+################################################################################
+# Misc
+
+*.ipynb
+.sources
+trash*
+.DS_Store
