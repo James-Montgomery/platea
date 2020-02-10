@@ -89,7 +89,9 @@ Please use pytest as your testing suite. You code should have >= 80% coverage.
 <!--
 sphinx-quickstart --ext-autodoc
 # comment conf.py file
-# add .nojekyll file 
+# add docs/.nojekyll file
+# update build dir in docs/Makefile
+# create dummy docs/index.html
 -->
 
 Updating the documentation is simple. First build the package extensions in place by running the code below in the repository root directory. This is required for Sphinx auto-docs to work correctly.
