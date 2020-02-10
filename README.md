@@ -14,7 +14,7 @@ One of the big design philosophy differences between this package and packages l
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-### The name Platea
+### About the Name `Platea`
 
 Why name a statistics package Platea? In addition to being a stats nerd I am also a history wonk. When writing this package I was reminded of a story in Thucydides' "History of the Peloponnesian War" where the Athenians needed to estimate the height of the walls surrounding Platea in order to know how high to make their siege ladders. The Athenians counted the number of bricks at a number of unplastered sections of wall and used the mode of these counts and the estimated height of a brick to approximate the height of the walls. This is one of the earliest recorded applications of "statistics" (5th Century BC).
 
@@ -66,6 +66,48 @@ Having neat and legible code is important. Having documentation is also importan
 
 ```
 pylint platea --disable=invalid-name
+```
+
+## Contributor's Guide
+
+Here are some basic guidelines for contributing.
+
+### Branch Strategy
+
+This repository doesn't use a complicated branching strategy. Simply create a feature branch off of master. When the feature is ready to be integrated with master, submit a pull request. A pull request will re quire at least one peer review and approval from the repository owner.
+
+### Style Guide
+
+Please stick to pep8 standards when for your code. Use numpy style docstrings.
+
+### Test Requirements
+
+Please use pytest as your testing suite. You code should have >= 80% coverage.
+
+### Updating the Docs
+
+<!--
+sphinx-quickstart --ext-autodoc
+# comment conf.py file
+-->
+
+Updating the documentation is simple. First build the package extensions in place by running the code below in the repository root directory. This is required for Sphinx auto-docs to work correctly.
+
+```
+python setup.py build_ext --inplace
+```
+
+Then let auto-docs check for updates to the package structure.
+
+```
+cd docs
+sphinx-apidoc -o . ../platea/
+```
+
+Finally, rebuild the html files.
+
+```
+make html
 ```
 
 ## Acknowledgments
