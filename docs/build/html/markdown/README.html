@@ -36,6 +36,7 @@
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="platea package" href="../platea.html" />
     <link rel="prev" title="Welcome to Platea’s documentation!" href="../index.html" /> 
 </head>
 
@@ -80,12 +81,12 @@
               
             
             
-              <p class="caption"><span class="caption-text">Contents:</span></p>
+              <p class="caption"><span class="caption-text">README:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Platea</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#authors">Authors</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#license">License</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#about-the-name-platea">About the Name <code class="docutils literal notranslate"><span class="pre">Platea</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#about-the-name">About the Name</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#getting-started">Getting Started</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#installing">Installing</a></li>
 </ul>
@@ -106,6 +107,10 @@
 <li class="toctree-l2"><a class="reference internal" href="#literary-references">Literary References</a></li>
 </ul>
 </li>
+</ul>
+<p class="caption"><span class="caption-text">Package Structure:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../platea.html">platea package</a></li>
 </ul>
 
             
@@ -207,8 +212,8 @@
 <h2>License<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h2>
 <p>This project is licensed under the MIT License - see the <a class="reference internal" href="LICENSE.html"><span class="doc">LICENSE.md</span></a> file for details</p>
 </div>
-<div class="section" id="about-the-name-platea">
-<h2>About the Name <code class="docutils literal notranslate"><span class="pre">Platea</span></code><a class="headerlink" href="#about-the-name-platea" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="about-the-name">
+<h2>About the Name<a class="headerlink" href="#about-the-name" title="Permalink to this headline">¶</a></h2>
 <p>Why name a statistics package Platea? In addition to being a stats nerd I am also a history wonk. When writing this package I was reminded of a story in Thucydides’ “History of the Peloponnesian War” where the Athenians needed to estimate the height of the walls surrounding Platea in order to know how high to make their siege ladders. The Athenians counted the number of bricks at a number of unplastered sections of wall and used the mode of these counts and the estimated height of a brick to approximate the height of the walls. This is one of the earliest recorded applications of “statistics” (5th Century BC).</p>
 </div>
 <div class="section" id="getting-started">
@@ -274,6 +279,7 @@ sphinx-quickstart --ext-autodoc
 # comment conf.py file
 # add docs/.nojekyll file
 # update build dir in docs/Makefile
+# update static dir in docs/conf.py
 # create dummy docs/index.html
 --><p>Updating the documentation is simple. First build the package extensions in place by running the code below in the repository root directory. This is required for Sphinx auto-docs to work correctly.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">build_ext</span> <span class="o">--</span><span class="n">inplace</span>
@@ -313,6 +319,8 @@ sphinx-quickstart --ext-autodoc
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../platea.html" class="btn btn-neutral float-right" title="platea package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="../index.html" class="btn btn-neutral float-left" title="Welcome to Platea’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
