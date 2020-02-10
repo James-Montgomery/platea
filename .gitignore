@@ -196,19 +196,6 @@ dmypy.json
 !docs
 !docs/*
 
-!docs/_templates
-!docs/_templates/*
-
-!docs/_build
-!docs/_build/*
-!docs/_build/doctrees
-!docs/_build/html/*
-!docs/_build/html/_sources/*
-!docs/_build/html/_static/*
-
-!docs/_static
-!docs/_static/*
-
 ################################################################################
 # Misc
 

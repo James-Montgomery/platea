@@ -1,0 +1,356 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Platea &mdash; platea  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Welcome to Platea’s documentation!" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> platea
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Platea</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#authors">Authors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#license">License</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#about-the-name-platea">About the Name <code class="docutils literal notranslate"><span class="pre">Platea</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#getting-started">Getting Started</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#installing">Installing</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#testing">Testing</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#running-the-unit-tests">Running the unit tests</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#running-the-style-tests">Running the style tests</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#contributor-s-guide">Contributor’s Guide</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#branch-strategy">Branch Strategy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#style-guide">Style Guide</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#test-requirements">Test Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#updating-the-docs">Updating the Docs</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#acknowledgments">Acknowledgments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#literary-references">Literary References</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">platea</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Platea</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/markdown/README.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="platea">
+<h1>Platea<a class="headerlink" href="#platea" title="Permalink to this headline">¶</a></h1>
+<p>Platea is a passion project of mine. While working to optimize code for my day job as a Data Scientist, I began exploring the wonderful worlds of C++ and Fortran. I became very interested in learning how to implement numerical methods at a low level and in a performant manner. This code is a product of that work.</p>
+<p>I’m open to all questions, feedback, commentary, and suggestions as long as they are constructive and polite! Discussions should always come in the form of git issues.</p>
+<p>One of the big design philosophy differences between this package and packages like numpy is that this package is not made to be fool proof. For example, there are functions where we assume that users will read the docs and input appropriate arguments. We have intentionally left out assertions to check if these arguments conform to the docs. This reduces run times, but it also removes a safety net that many python users rely on.</p>
+<div class="section" id="authors">
+<h2>Authors<a class="headerlink" href="#authors" title="Permalink to this headline">¶</a></h2>
+<p><strong>James Montgomery</strong> - <em>Initial work</em> - <a class="reference external" href="http://jamesmontgomery.us">jamesmontgomery.us</a></p>
+</div>
+<div class="section" id="license">
+<h2>License<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h2>
+<p>This project is licensed under the MIT License - see the <a class="reference internal" href="LICENSE.html"><span class="doc">LICENSE.md</span></a> file for details</p>
+</div>
+<div class="section" id="about-the-name-platea">
+<h2>About the Name <code class="docutils literal notranslate"><span class="pre">Platea</span></code><a class="headerlink" href="#about-the-name-platea" title="Permalink to this headline">¶</a></h2>
+<p>Why name a statistics package Platea? In addition to being a stats nerd I am also a history wonk. When writing this package I was reminded of a story in Thucydides’ “History of the Peloponnesian War” where the Athenians needed to estimate the height of the walls surrounding Platea in order to know how high to make their siege ladders. The Athenians counted the number of bricks at a number of unplastered sections of wall and used the mode of these counts and the estimated height of a brick to approximate the height of the walls. This is one of the earliest recorded applications of “statistics” (5th Century BC).</p>
+</div>
+<div class="section" id="getting-started">
+<h2>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
+<p>These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.</p>
+<div class="section" id="installing">
+<h3>Installing<a class="headerlink" href="#installing" title="Permalink to this headline">¶</a></h3>
+<p>For a local installation, first git clone this repository. Then follow these instructions:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">.</span>
+</pre></div>
+</div>
+<p>To install from <a class="reference external" href="https://pypi.org/project/platea/">pypi</a>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">U</span> <span class="n">platea</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="testing">
+<h2>Testing<a class="headerlink" href="#testing" title="Permalink to this headline">¶</a></h2>
+<p>Testing is an important part of creating maintainable, production grade code. Below are instructions for running unit and style tests as well as installing the necessary testing packages. Tests have intentionally been separated from the installable pypi package for a variety of reasons.</p>
+<p>Make sure you have the required testing packages:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements_test</span><span class="o">.</span><span class="n">txt</span>
+</pre></div>
+</div>
+<p>You will also need to build the package extensions in place:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">build_ext</span> <span class="o">--</span><span class="n">inplace</span>
+</pre></div>
+</div>
+<div class="section" id="running-the-unit-tests">
+<h3>Running the unit tests<a class="headerlink" href="#running-the-unit-tests" title="Permalink to this headline">¶</a></h3>
+<p>We use the pytest framework for unit testing.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pytest</span> <span class="o">-</span><span class="n">vvl</span> <span class="o">-</span><span class="n">s</span> <span class="o">--</span><span class="n">cov</span> <span class="n">platea</span> <span class="o">--</span><span class="n">disable</span><span class="o">-</span><span class="n">pytest</span><span class="o">-</span><span class="n">warnings</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="running-the-style-tests">
+<h3>Running the style tests<a class="headerlink" href="#running-the-style-tests" title="Permalink to this headline">¶</a></h3>
+<p>Having neat and legible code is important. Having documentation is also important. We use pylint as our style guide framework. Many of our naming conventions follow directly from the literary sources they come from. This makes it easier to read the mathematical equations and see how they translate into the code. This sometimes forces us to break pep8 conventions for naming.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pylint</span> <span class="n">platea</span> <span class="o">--</span><span class="n">disable</span><span class="o">=</span><span class="n">invalid</span><span class="o">-</span><span class="n">name</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="contributor-s-guide">
+<h2>Contributor’s Guide<a class="headerlink" href="#contributor-s-guide" title="Permalink to this headline">¶</a></h2>
+<p>Here are some basic guidelines for contributing.</p>
+<div class="section" id="branch-strategy">
+<h3>Branch Strategy<a class="headerlink" href="#branch-strategy" title="Permalink to this headline">¶</a></h3>
+<p>This repository doesn’t use a complicated branching strategy. Simply create a feature branch off of master. When the feature is ready to be integrated with master, submit a pull request. A pull request will re quire at least one peer review and approval from the repository owner.</p>
+</div>
+<div class="section" id="style-guide">
+<h3>Style Guide<a class="headerlink" href="#style-guide" title="Permalink to this headline">¶</a></h3>
+<p>Please stick to pep8 standards when for your code. Use numpy style docstrings.</p>
+</div>
+<div class="section" id="test-requirements">
+<h3>Test Requirements<a class="headerlink" href="#test-requirements" title="Permalink to this headline">¶</a></h3>
+<p>Please use pytest as your testing suite. You code should have &gt;= 80% coverage.</p>
+</div>
+<div class="section" id="updating-the-docs">
+<h3>Updating the Docs<a class="headerlink" href="#updating-the-docs" title="Permalink to this headline">¶</a></h3>
+<!--
+sphinx-quickstart --ext-autodoc
+# comment conf.py file
+# add docs/.nojekyll file
+# update build dir in docs/Makefile
+# create dummy docs/index.html
+--><p>Updating the documentation is simple. First build the package extensions in place by running the code below in the repository root directory. This is required for Sphinx auto-docs to work correctly.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">build_ext</span> <span class="o">--</span><span class="n">inplace</span>
+</pre></div>
+</div>
+<p>Then let auto-docs check for updates to the package structure.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">docs</span>
+<span class="n">sphinx</span><span class="o">-</span><span class="n">apidoc</span> <span class="o">-</span><span class="n">o</span> <span class="o">.</span> <span class="o">../</span><span class="n">platea</span><span class="o">/</span>
+</pre></div>
+</div>
+<p>Finally, rebuild the html files.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">html</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="acknowledgments">
+<h2>Acknowledgments<a class="headerlink" href="#acknowledgments" title="Permalink to this headline">¶</a></h2>
+<p>A big thank you to Keegan Hines who first recommended the book “Numerical Recipes” to me. Another big thank you to Mack Sweeney who has shaped much of my appreciation for code styling and standards. Finally, thanks to Greg Sinclair for being a sounding board and source of advice as I worked on this package.</p>
+</div>
+<div class="section" id="literary-references">
+<h2>Literary References<a class="headerlink" href="#literary-references" title="Permalink to this headline">¶</a></h2>
+<p>Book References:</p>
+<ol class="simple">
+<li><p><a class="reference external" href="https://websites.pmc.ucsc.edu/~fnimmo/eart290c_17/NumericalRecipesinF77.pdf">Numerical Recipes in Fortran Second Edition</a></p></li>
+<li><p><a class="reference external" href="http://www.elch.chem.msu.ru/tch/group/FortranBooks/NumericalRecipesinF90.pdf">Numerical Recipes in Fortran 90 Second Edition</a></p></li>
+<li><p><a class="reference external" href="https://www.cec.uchile.cl/cinetica/pcordero/MC_libros/NumericalRecipesinC.pdf">Numerical Recipes in C Second Edition</a></p></li>
+<li><p><a class="reference external" href="#">Numerical Recipes in C Third Edition</a></p></li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../index.html" class="btn btn-neutral float-left" title="Welcome to Platea’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, James Montgomery
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
