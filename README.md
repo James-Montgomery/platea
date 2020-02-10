@@ -30,7 +30,7 @@ For a local installation, first git clone this repository. Then follow these ins
 pip install .
 ```
 
-To install from pypi:
+To install from [pypi](https://pypi.org/project/platea/):
 
 ```
 pip install -U platea
@@ -89,6 +89,7 @@ Please use pytest as your testing suite. You code should have >= 80% coverage.
 <!--
 sphinx-quickstart --ext-autodoc
 # comment conf.py file
+# add .nojekyll file 
 -->
 
 Updating the documentation is simple. First build the package extensions in place by running the code below in the repository root directory. This is required for Sphinx auto-docs to work correctly.
