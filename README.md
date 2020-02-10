@@ -14,7 +14,7 @@ One of the big design philosophy differences between this package and packages l
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-### About the Name `Platea`
+### About the Name 
 
 Why name a statistics package Platea? In addition to being a stats nerd I am also a history wonk. When writing this package I was reminded of a story in Thucydides' "History of the Peloponnesian War" where the Athenians needed to estimate the height of the walls surrounding Platea in order to know how high to make their siege ladders. The Athenians counted the number of bricks at a number of unplastered sections of wall and used the mode of these counts and the estimated height of a brick to approximate the height of the walls. This is one of the earliest recorded applications of "statistics" (5th Century BC).
 
@@ -91,6 +91,7 @@ sphinx-quickstart --ext-autodoc
 # comment conf.py file
 # add docs/.nojekyll file
 # update build dir in docs/Makefile
+# update static dir in docs/conf.py
 # create dummy docs/index.html
 -->
 

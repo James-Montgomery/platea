@@ -78,19 +78,22 @@ def setup_package():
     setup(
         name="platea",
         version=versioneer.get_version(),
+
         author="James Montgomery",
         author_email="jamesoneillmontgomery@gmail.com",
+        url="https://james-montgomery.github.io/platea/build/html/index.html",
         description="A package for statistics and numeric methods.",
         long_description=long_description,
         long_description_content_type="text/markdown",
-        url="https://github.com/James-Montgomery/stats",
+
         python_requires=">=3.6",
-        latforms='any',
+        platforms='any',
         classifiers=[
             "Programming Language :: Python :: 3",
             "License :: OSI Approved :: MIT License",
             "Operating System :: OS Independent",
         ],
+
         packages=setuptools.find_packages(),
         install_requires=parse_requirements("requirements.txt"),
         extra_require={},
